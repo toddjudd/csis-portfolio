@@ -1,0 +1,121 @@
+/*Class Tags*/
+.main-content {
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	align-items:center;
+}
+.card {
+	color: black;
+	min-height: 130px;
+	min-width: 300px;
+	max-width: 800px;
+	margin: 10px 20px;
+	padding: 8px;
+	flex: 1;
+}
+
+.card-tag {
+	color: black;
+	margin: 10px 20px;
+	padding: 8px;
+	flex: 1;
+}
+
+.education {
+	display:flex;
+	flex-direction:row;
+}
+
+.education-right {
+	flex:2;
+}
+
+.education-text {
+	display:flex;
+	flex-direction:row;
+	flex-wrap:wrap;
+}
+
+.card-title{
+	color: #f44336;
+	font-size: 24px;
+	line-height: 32px;
+	margin-bottom: 20px;
+	-webkit-font-smoothing: antialiased;
+}
+
+.nav-container {
+	background-color:#727272;
+}
+
+.nav-tag {
+	width:100%;
+	margin:10px;
+	height:50px;
+	@apply(--shadow-elevation-2dp);
+}
+
+.school-icon {
+	min-width: 154px;
+	max-height: 160px;
+	padding: 8px;
+	margin: 10px;
+}
+
+.school-icon-container {
+	margin: 10px;
+	padding: 8px;
+	width: 160px;
+	height: 160px;
+}
+
+.school-logos {
+	margin: 10px 60.281px 10px 10px;
+	padding: 8px;
+	width: 200px;
+}
+
+.school-text {
+	height: 160px;
+	margin: 10px;
+	padding: 8px;
+}
+
+.skill-img {
+	padding: 8px;
+	width: 57px;
+	height: 57px;
+}
+
+.skill-tag {
+	margin: 8px;
+	min-height: 80px;
+	flex:1;
+}
+
+.spacer {
+	width: 50px;
+	background-color: blue;
+}
+
+.spacer-tab {
+	padding: 60px;
+}
+
+/*Polymer Styling - I don't think these work*/
+paper-button.colorful {
+	color: #00bcd4;
+}
+
+#paperDrawerPanel [main] {
+	background-color: var(--google-grey-100);
+}
+
+#paperDrawerPanel [drawer] {
+	border-right: 1px solid var(--google-grey-300);
+}
+
+#paperDrawerPanel[right-drawer] [drawer] {
+	border-left: 1px solid var(--google-grey-300);
+}
