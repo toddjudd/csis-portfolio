@@ -38,7 +38,8 @@
 }
 
 .card-title{
-	color: #f44336;
+	color: #795548;
+	font-weight:bold;
 	font-size: 24px;
 	line-height: 32px;
 	margin-bottom: 20px;
@@ -82,14 +83,21 @@
 	padding: 8px;
 }
 
+.skill-container {
+	display:flex;
+
+}
+
 .skill-img {
 	padding: 8px;
 	width: 57px;
 	height: 57px;
+	margin:auto;
 }
 
 .skill-tag {
-	margin: 8px;
+	padding:8px;
+	margin: auto;
 	min-height: 80px;
 	flex:1;
 }
