@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Scroll Test</title>
+		<link rel="stylesheet" type="text/css" href="scroll.css">
+		<script src="jquery-2.2.0.js"></script>
+	</head>
+	<body>
+		<header class="top-header">
+			<span class="menu-icon">☰</span>
+		</header>
+
+		<div class="search">
+			<input type="search" placeholder="Search or type URL" />
+		</div>
+
+		<div class="top">
+			<div class="hero"></div>
+		</div>
+
+		<main>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+		</main>
+	</body>
+	<script type="text/javascript">
+		var wrap = $("#wrap");
+
+		wrap.on("scroll", function(e) {
+
+		  if (this.scrollTop > 147) {
+		    wrap.addClass("fix-search");
+		  } else {
+		    wrap.removeClass("fix-search");
+		  }
+
+		});	
+	</script>
+</html>
