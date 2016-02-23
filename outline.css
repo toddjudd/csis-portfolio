@@ -8,12 +8,17 @@ body {
 	background-color:#1a1a1a;
 }
 
+h4 {
+	text-align: center;
+}
+
 h1 {
 	text-align: center;
 }
 
 img {
 	float:left;
+	margin:16px;
 }
 
 ul {
@@ -23,5 +28,12 @@ ul {
 ol > li {
 	font-weight: bold;
 	font-size:20pt;
+	color:#ffff00;
 }
 
+
+.list-container {
+	max-width:1200px;
+	margin: auto;
+	padding:16px;
+}
