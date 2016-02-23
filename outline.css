@@ -1,0 +1,29 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+
+@import "compass/css3";
+
+body {
+	font-family: 'roboto', sans-serif;
+	color:white;
+	background-color:#1a1a1a;
+}
+
+h1 {
+	text-align: center;
+}
+
+img {
+	float:left;
+	padding:8px;
+	margin:8px;
+}
+
+ul {
+	list-style: disc;
+}
+
+ol > li {
+	font-weight: bold;
+	font-size:20pt;
+}
+
