@@ -27,6 +27,7 @@
 	<link rel="import" href="bower_components/iron-icons/iron-icons.html">
 
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="link-file-style.css">
 
 </head>
 <body fulllbleed>
@@ -36,24 +37,33 @@
 		<a href="/">Home</a>
 		<a href="/about.html">About</a>
 		<a href="/scroll.html">Projects</a>
-	</nav>
-	<div class="content">
-		<ol>
-			<li>
-				<ul>
-					<li><h3>My First Project</h3></li>
-					<li><a href="/first.html"><h4>CSIS 1430 - Lab 1</h4></a></li>
-					<li><p>First lab for HTML class.</p></li>
-				</ul>
-			</li>
-			<li>
-				<ul>
-					<li><h3>Rainbow Six Siege Outline</h3></li>
-					<li><a href="/outline.html"><h4>CSIS 1430 - Lab 3</h4></a></li>
-					<li><p>Outline of Rainbow Six Siege attackers using html elements such as ul li ol and more.</p></li>
-				</ul>
-			</li>
-		</ol>	
+	</nav>			
+	<div class="content-orginizer">
+	
+		<div class="project-card">
+			<a href="/first.html"><img src="resources\first.png" class="project-photo"></a>
+			<div class="project-circle"></div>
+			<div class="project-text">
+				<h3>The First Project</h3>
+				<hr></hr>
+				<p>This is the first project for my html class in which we explore some of the fundamental elements in HTML.</p>
+				<hr></hr>
+				<h5><a href="/first.html">&nbsp CSIS 1430 - Lab 1 &nbsp</a></h5>
+			</div>
+		</div>
+
+		<div class="project-card">
+			<a href="/outline.html"><img src="resources\siege.png" class="project-photo"></a>
+			<div class="project-circle"></div>
+			<div class="project-text">
+				<h3>Rainbow Six Siege Outline</h3>
+				<hr></hr>
+				<p>Outline of Rainbow Six Siege attackers using html elements such as ul li ol and more.</p>
+				<hr></hr>
+				<h5><a href="/outline.html">&nbsp CSIS 1430 - Lab 3 &nbsp</a></h5>
+			</div>
+		</div>
+	
 	</div>
 	<div class="legal">
 		

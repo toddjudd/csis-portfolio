@@ -9,6 +9,7 @@ input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}b
 
 body, {
 	font-family: 'roboto', sans-serif; 
+	background-color:#333333;
 }
 
 nav {
@@ -131,6 +132,13 @@ td {
 .card-title {
 	font-size: 40px;
 	margin:25px;
+}
+
+.content-orginizer {
+	background-color:#eee;
+	display:flex;
+	flex-direction:row;
+	min-height:calc(100vh - 100px)
 }
 
 .flex1 {

@@ -1,0 +1,57 @@
+.project-card {
+	max-height:350px;
+	width:275px;
+	background-color:white;
+}
+
+.project-photo {
+	height:150px;
+	width:275px;
+}
+
+.project-card {
+	margin:15px;
+}
+
+.project-text {
+	color:#576675;
+
+}
+
+.project-text > h3 {
+	text-align: center;
+	font-weight:bold;
+
+}
+
+.project-text > h5 {
+	font-weight: bold;
+	text-align: center;
+}
+
+.project-text > h5 > a {
+	margin:auto;
+}
+
+.project-text > h5 > a:link {
+	color:#576675;
+	text-decoration:none;
+}
+
+.project-text > h5 > a:visited {
+	color:#576675;
+	text-decoration:none;
+}
+
+.project-text > h5 > a:hover {
+	color:#ffffff;
+	text-decoration:none;
+	background-color:#576675;
+	border-radius: 5px;
+
+}
+
+.project-text > h5 > a:active {
+	color:#576675;
+	text-decoration:none;
+}
