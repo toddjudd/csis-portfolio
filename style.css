@@ -69,6 +69,8 @@ nav > h1 {
 
 .content {
 	background: white;
+	max-width: 1000px;
+	margin:auto;
 }
 
 .legal {

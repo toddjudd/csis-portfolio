@@ -1,0 +1,14 @@
+.photo-center {
+	width:500px;
+}
+
+.photo-left {
+	float:left;
+	width:175px;
+}
+
+.photo-right {
+	clear:left;
+	float:right;
+	width:175px;
+}
