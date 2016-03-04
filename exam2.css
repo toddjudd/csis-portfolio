@@ -1,0 +1,31 @@
+.image-wrapper {
+	width:800px;
+	height:100vh;
+	margin:auto;
+}
+
+/*.image-wrapper > img {
+	width:400px;
+	float:left;
+	display:inline;
+}*/
+
+.narnia {
+	width:400px;
+	float:left;
+	clear:left;
+}
+
+h5 {
+	font-weight:bold;
+	display:inline;
+}
+
+h6 {
+	display:inline;
+	clear:both;
+}
+
+.spacer {
+	height:301px;
+}

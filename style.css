@@ -140,7 +140,10 @@ td {
 	background-color:#eee;
 	display:flex;
 	flex-direction:row;
-	min-height:calc(100vh - 100px)
+	flex-wrap:wrap;
+	justify-content:center;
+	min-height:calc(100vh - 100px);
+	width:100vw;
 }
 
 .flex1 {
