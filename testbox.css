@@ -1,0 +1,22 @@
+.box {
+	width:900px;
+	height:100vh;
+	margin:auto;
+	border:goldenrod solid 10px;
+	display:flex;
+	flex-direction:row;
+	flex-wrap:wrap;
+}
+
+.item {
+	flex:1;
+	color:black;
+}
+
+.item > textarea {
+	display:none;
+}
+
+input:checked + textarea {
+	display:all;
+}
