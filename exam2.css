@@ -1,31 +1,18 @@
-.image-wrapper {
-	width:800px;
-	height:100vh;
-	margin:auto;
+.borders {
+	border: 1px solid #ccc;
 }
 
-/*.image-wrapper > img {
-	width:400px;
-	float:left;
-	display:inline;
-}*/
+.align {
+	vertical-align:center;
+}
 
 .narnia {
-	width:400px;
-	float:left;
-	clear:left;
+	height:192px;
+	width:256px;
 }
 
-h5 {
-	font-weight:bold;
-	display:inline;
-}
-
-h6 {
-	display:inline;
-	clear:both;
-}
-
-.spacer {
-	height:301px;
+.border{
+	padding: 0.25rem;
+	text-align: left;
+	border: 1px solid #ccc;
 }
