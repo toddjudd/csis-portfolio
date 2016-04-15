@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>Todd Judd</title>
+	<meta name="description" content="My portfolio and work space for my current projects.">
+
+	<!-- Mobile -->
+	<meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
+
+	<!-- Chrome / Android -->
+	<meta name="mobile-web-app-capable" content="yes">
+	<meta name="theme-color" content="black">
+	<link rel="icon" href="icon.png">
+
+	<!-- Safari / iOS -->
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<link rel="apple-touch-icon-precomposed" href="apple-touch-icon.png">
+
+	<!-- Web Components -->
+	<script src="bower_components/webcomponentsjs/webcomponents-lite.js"></script>
+	<link rel="import" href="bower_components/paper-header-panel/paper-header-panel.html">
+	<link rel="import" href="bower_components/paper-toolbar/paper-toolbar.html">
+	<link rel="import" href="bower_components/paper-button/paper-button.html">
+	<link rel="import" href="bower_components/iron-icons/iron-icons.html">
+
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body fulllbleed>
+	<nav>
+		<h1>D. Todd Judd</h1>
+		<span></span>
+		<a href="/">Home</a>
+		<a href="/about.html">About</a>
+		<a href="/scroll.html">Projects</a>
+	</nav>
+	<div class="content">
+		<form method="post" id="infoForm" action="http://philscis.com/cgi-bin/quick.cgi">
+			<table>
+				<tr>
+					<td>First Name: </td>
+					<td><input name="firstName" size="10" /></td>
+				</tr>
+				<tr>
+					<td>Last Name: </td>
+					<td><input name="lastName" size="10" /></td>
+				</tr>
+				<tr>
+					<td>Birth Date:</td>
+					<td><input type="date" id="myDate" value="2016-01-01"></td>
+				</tr>
+				<tr>
+					<td>Sex:</td>
+					<td>
+						<input type="radio" name="sex" value="male" checked="true">Male
+						<input type="radio" name="sex" value="female">Female
+					</td>
+				</tr>
+				<tr>
+					<td>Income:</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>
+						<input type="radio" name="year" value="020" checked="ture">$0-$20K 
+						<input type="radio" name="year" value="2040">$20K-$40K
+						<input type="radio" name="year" value="4060">$40K-$60K
+						<input type="radio" name="year" value="60100">$60K-$100K
+						<input type="radio" name="year" value="100k">$100K or more
+					</td>
+				</tr>
+				<tr>
+					<td>Where do you get your news? :</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>
+						<input type="checkbox" name="news" value="books">Books
+						<input type="checkbox" name="news" value="newspaper">Newspaper
+						<input type="checkbox" name="news" value="radio">Radio
+						<input type="checkbox" name="news" value="tv">TV
+						<input type="checkbox" name="news" value="magazines">Magazines
+					</td>
+				</tr>
+				<tr>
+					<td>What are your favorite foods? :</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>
+						<input type="checkbox" name="Foods" value="chinese">Chinese
+						<input type="checkbox" name="Foods" value="french">French
+						<input type="checkbox" name="Foods" value="italian">Italian
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<input type="submit" name="submit" value="Submit"></input>
+					</td>
+					<td>
+						<button type="button" onclick="clearFunction()">Clear</button>
+					</td>
+				</tr>
+			</table>
+		</form>
+	</div>
+	
+	<script>
+		function clearFunction() {
+			alert("You have entered into the clear function");
+			document.getElementById("infoForm").reset();
+		}
+	</script>
+
+</body>
+</html>
