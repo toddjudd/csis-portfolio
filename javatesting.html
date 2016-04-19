@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>Todd Judd</title>
+	<meta name="description" content="My portfolio and work space for my current projects.">
+
+	<!-- Mobile -->
+	<meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
+
+	<!-- Chrome / Android -->
+	<meta name="mobile-web-app-capable" content="yes">
+	<meta name="theme-color" content="black">
+	<link rel="icon" href="icon.png">
+
+	<!-- Safari / iOS -->
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<link rel="apple-touch-icon-precomposed" href="apple-touch-icon.png">
+
+	<!-- Web Components -->
+	<script src="bower_components/webcomponentsjs/webcomponents-lite.js"></script>
+	<link rel="import" href="bower_components/paper-header-panel/paper-header-panel.html">
+	<link rel="import" href="bower_components/paper-toolbar/paper-toolbar.html">
+	<link rel="import" href="bower_components/paper-button/paper-button.html">
+	<link rel="import" href="bower_components/iron-icons/iron-icons.html">
+
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+	<script language="javascript">
+		<!-- Hide from Browsers
+
+		function checkIt()
+		{
+			var theAns = ""
+			var flag = false
+
+			if (document.myForm.firstname.value == "" || document.myForm.firstname.value == null)
+			{
+				theAns = theAns + "No first name entered\n"
+				flag = true
+			}
+
+			if (document.myForm.lastname.value =="" || document.myForm.firstname.value == null) {
+				theAns = theAns + "No last name entered\n"
+				flag = true
+			}
+
+			if(( document.myForm.sex[0].checked == false )	&&
+			   ( document.myForm.sex[1].checked == false ))
+			{
+				theAns = theAns + "No sex selected\n"
+				flag = true
+			}
+
+			if(( document.myForm.year[0].checked == false )	&&
+			   ( document.myForm.year[1].checked == false )	&&
+			   ( document.myForm.year[2].checked == false )	&&
+			   ( document.myForm.year[3].checked == false )	&&
+			   ( document.myForm.year[4].checked == false ))
+			{
+				theAns = theAns + "No Income selected\n"
+				flag = true
+			}
+
+			if(( document.myForm.food[0].checked == false )	&&
+			   ( document.myForm.food[1].checked == false )	&&
+			   ( document.myForm.food[2].checked == false ))
+			{
+				theAns = theAns + "No food selected\n"
+				flag = true
+			}
+			
+			if(( document.myForm.news[0].checked == false )	&&
+			   ( document.myForm.news[1].checked == false )	&&
+			   ( document.myForm.news[2].checked == false )	&&
+			   ( document.myForm.news[3].checked == false )	&&
+			   ( document.myForm.news[4].checked == false ))
+			{
+				theAns = theAns + "No news selected\n"
+				flag = true
+			}
+			
+			if ( flag == true )
+			{
+				alert( theAns )
+				return false			//	Cause to NOT transmit
+			}
+			else
+			{ 
+				return true
+			}
+		}
+
+		-->
+	</script>
+
+</head>
+<body fulllbleed>
+	<nav>
+		<h1>D. Todd Judd</h1>
+		<span></span>
+		<a href="/">Home</a>
+		<a href="/about.html">About</a>
+		<a href="/scroll.html">Projects</a>
+	</nav>
+	<div class="content">
+		<form name="myForm" action="http://philscis.com/cgi-bin/quick.cgi" onSubmit="return checkIt()" method="post">
+		  	<p>First Name:</p>
+		  	<input type="text" name="firstname" value=""/>
+		  	<br>
+		  	<p>Last Name:</p>
+		  	<input type="text" name="lastname" value=""/>
+		  	<br>
+		  	<p>Birth Date:</p>
+		  	<input type="date" name="birthday" value="2016-01-01" />
+		    <br>
+		    <p>Sex:</p>
+		    <input type="radio" name="sex" value="male" checked/> Male
+		    <input type="radio" name="sex" value="female" /> Female
+		    <br>
+		    <p>Income:</p>
+			<input type="radio" name="year" value="020" checked>$0-$20K <br>
+			<input type="radio" name="year" value="2040">$20K-$40K<br>
+			<input type="radio" name="year" value="4060">$40K-$60K<br>
+			<input type="radio" name="year" value="60100">$60K-$100K<br>
+			<input type="radio" name="year" value="100k">$100K or more<br>
+		    <p>Select your favorite food:</p>
+		    <input type="checkbox" name="food" value="chinese">Chinese<br>
+		    <input type="checkbox" name="food" value="french">French<br>
+		    <input type="checkbox" name="food" value="italian">Italian<br>
+		    <br>
+		    <p>Select a form of news:</p>
+		    <input type="checkbox" name="news" value="books">Books<br>
+		    <input type="checkbox" name="news" value="newspapers">Newspaper<br>
+		    <input type="checkbox" name="news" value="radio">Radio<br>
+		    <input type="checkbox" name="news" value="tv">TV<br>
+		    <input type="checkbox" name="news" value="magazines">Magazine<br>
+
+		    <input type="submit" value="Send It">
+		    <input type="reset" value="Clear it">
+		</form>
+		<!-- <form method="post" id="infoForm" onSubmit="return checkFunction()" action="http://philscis.com/cgi-bin/quick.cgi">
+			First Name:
+				<input id="firstName" name="firstName" size="10" /><br>
+			Last Name:
+				<input id="lastNamek" name="lastName" size="10" /><br>
+			Birth Date:
+				<input type="date" id="myDate" value="2016-01-01"><br>
+			Sex:
+				<input type="radio" name="sex" value="male" checked="true">Male
+				<input type="radio" name="sex" value="female">Female
+			Income:
+				<input type="radio" name="year" value="020" checked="ture">$0-$20K <br>
+				<input type="radio" name="year" value="2040">$20K-$40K<br>
+				<input type="radio" name="year" value="4060">$40K-$60K<br>
+				<input type="radio" name="year" value="60100">$60K-$100K<br>
+				<input type="radio" name="year" value="100k">$100K or more<br>
+			Where do you get your news? :
+				<input type="checkbox" name="News" value="book"> Books<br>
+				<input type="checkbox" name="News" value="paper" checked> Newspaper<br>
+				<input type="checkbox" name="News" value="radio"> radio<br>
+				<input type="checkbox" name="News" value="tv"> TV<br>
+				<input type="checkbox" name="News" value="magazine"> Magazine<br>
+			What are your favorite foods? :
+				<input type="checkbox" name="Foods" value="chinese" checked>Chinese<br/>
+				<input type="checkbox" name="Foods" value="french">French<br/>
+				<input type="checkbox" name="Foods" value="italian">Italian<br/>
+			<input type="submit">sub</input>
+			<button type="button" onclick="clearFunction()">Clear</button>
+		</form> -->
+	</div>
+</body>
+</html>

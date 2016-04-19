@@ -38,7 +38,7 @@
 		<a href="/scroll.html">Projects</a>
 	</nav>
 	<div class="content">
-		<form method="post" id="infoForm" action="http://philscis.com/cgi-bin/quick.cgi">
+		<form method="post" id="infoForm" onsubmit="return checkFunction()" action="http://philscis.com/cgi-bin/quick.cgi">
 			<table>
 				<tr>
 					<td>First Name: </td>
@@ -78,6 +78,7 @@
 				<tr>
 					<td></td>
 					<td>
+						<input type="hidden" name="News" value=""></input>
 						<input type="checkbox" name="News" value="book"> Books<br>
 						<input type="checkbox" name="News" value="paper" checked> Newspaper<br>
 						<input type="checkbox" name="News" value="raido"> Raido<br>
@@ -98,7 +99,7 @@
 				</tr>
 				<tr>
 					<td>
-						<button type="button" onclick="checkFunction()" name"check" value"submit">Submit</button>
+						<!-- <button type="button" onclick="checkFunction()" name"check" value"submit">Submit</button> -->
 						<input type="submit">sub</input>
 					</td>
 					<td>
@@ -115,27 +116,53 @@
 		}
 //this one works
 		function checkFunction() {
-			var x = document.forms["infoForm"]["firstName"].value;
-			if (x == null || x == "") {
-				alert("First name is blank. Fill out first name.");
-				return false;
+			var msg = ""
+			var flag = false
+
+			alert()
+
+			if ((document.infoForm.Foods[0].checked == false) &&
+				(document.infoForm.Foods[1].checked == false) &&
+				(document.infoForm.Foods[2].checked == false)) {
+				msg = msg + "No Food Selected\n"
+				flag = true
+				alert()
 			}
-			var x = document.forms["infoForm"]["lastName"].value;
-			if (x == null || x == "") {
-				alert("Last name blank. Fill out last name.");
-				return false;
+			if (flag == true ) {
+				alert(msg)
+				return false
 			}
-			if (infoForm.News.checked == false) {
-				alert("No news form selected. Please choose one or more forms of news.");
-				flag ++;
-				return false;
-			}
-			if (infoForm.Foods.checked == flase) {
-				alert("No favorite food selected. Please choose a favorite food.");
-				flag ++;
-				return false;
+			else {
+				return true
 			}
 		}
+
+//this is just garbage		
+		// 	var x = document.forms["infoForm"]["firstName"].value;
+		// 	if (x == null || x == "") {
+		// 		alert("First name is blank. Fill out first name.");
+		// 		return false;
+		// 	}
+		// 	var x = document.forms["infoForm"]["lastName"].value;
+		// 	if (x == null || x == "") {
+		// 		alert("Last name blank. Fill out last name.");
+		// 		return false;
+		// 	}
+		// 	var x = document.forms["infoForm"]["News"].value;
+		// 	if (x == null || x == "") {
+		// 		alert("News blank. Fill out News.");
+		// 		return false;
+		// 	}
+		// 	var x = document.forms["infoForm"]["Foods"].value;
+		// 	if (x == null || x == "") {
+		// 		alert("Foods blank. Fill out foods.");
+		// 		return false;
+		// 	}
+		// 	else {
+		// 		document.forms["infoForm"].submit();
+		// 		return false;
+		// 	}
+		// }
 
 //this one should work... 
 
