@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>Todd Judd</title>
+	<meta name="description" content="My portfolio and work space for my current projects.">
+
+	<!-- Mobile -->
+	<meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
+
+	<!-- Chrome / Android -->
+	<meta name="mobile-web-app-capable" content="yes">
+	<meta name="theme-color" content="black">
+	<link rel="icon" href="icon.png">
+
+	<!-- Safari / iOS -->
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<link rel="apple-touch-icon-precomposed" href="apple-touch-icon.png">
+
+	<!-- Web Components -->
+	<script src="bower_components/webcomponentsjs/webcomponents-lite.js"></script>
+	<link rel="import" href="bower_components/paper-header-panel/paper-header-panel.html">
+	<link rel="import" href="bower_components/paper-toolbar/paper-toolbar.html">
+	<link rel="import" href="bower_components/paper-button/paper-button.html">
+	<link rel="import" href="bower_components/iron-icons/iron-icons.html">
+
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body fulllbleed>
+	<nav>
+		<h1>D. Todd Judd</h1>
+		<span></span>
+		<a href="/">Home</a>
+		<a href="/about.html">About</a>
+		<a href="/scroll.html">Projects</a>
+	</nav>
+	<div class="content">
+		<form method="post" id="infoForm" action="http://philscis.com/cgi-bin/quick.cgi">
+			<table>
+				<tr>
+					<td>First Name: </td>
+					<td><input id="firstName" name="firstName" size="10" /></td>
+				</tr>
+				<tr>
+					<td>Last Name: </td>
+					<td><input id="lastNamek" name="lastName" size="10" /></td>
+				</tr>
+				<tr>
+					<td>Birth Date:</td>
+					<td><input type="date" id="myDate" value="2016-01-01"></td>
+				</tr>
+				<tr>
+					<td>Sex:</td>
+					<td>
+						<input type="radio" name="sex" value="male" checked="true">Male
+						<input type="radio" name="sex" value="female">Female
+					</td>
+				</tr>
+				<tr>
+					<td>Income:</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>
+						<input type="radio" name="year" value="020" checked="ture">$0-$20K 
+						<input type="radio" name="year" value="2040">$20K-$40K
+						<input type="radio" name="year" value="4060">$40K-$60K
+						<input type="radio" name="year" value="60100">$60K-$100K
+						<input type="radio" name="year" value="100k">$100K or more
+					</td>
+				</tr>
+				<tr>
+					<td>Where do you get your news? :</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>
+						<input type="checkbox" name="News" value="book"> Books<br>
+						<input type="checkbox" name="News" value="paper" checked> Newspaper<br>
+						<input type="checkbox" name="News" value="raido"> Raido<br>
+						<input type="checkbox" name="News" value="tv"> TV<br>
+						<input type="checkbox" name="News" value="magazine"> Magazine<br>
+					</td>
+				</tr>
+				<tr>
+					<td>What are your favorite foods? :</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>
+						<input type="checkbox" name="Foods" value="chinese" checked>Chinese<br/>
+						<input type="checkbox" name="Foods" value="french">French<br/>
+						<input type="checkbox" name="Foods" value="italian">Italian<br/>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<button type="button" onclick="checkFunction()" name"check" value"submit">Submit</button>
+						<input type="submit">sub</input>
+					</td>
+					<td>
+						<button type="button" onclick="clearFunction()">Clear</button>
+					</td>
+				</tr>
+			</table>
+		</form>
+	</div>
+	
+	<script>
+		function clearFunction() {
+			document.getElementById("infoForm").reset();
+		}
+//this one works
+		function checkFunction() {
+			var x = document.forms["infoForm"]["firstName"].value;
+			if (x == null || x == "") {
+				alert("First name is blank. Fill out first name.");
+				return false;
+			}
+			var x = document.forms["infoForm"]["lastName"].value;
+			if (x == null || x == "") {
+				alert("Last name blank. Fill out last name.");
+				return false;
+			}
+			if (infoForm.News.checked == false) {
+				alert("No news form selected. Please choose one or more forms of news.");
+				flag ++;
+				return false;
+			}
+			if (infoForm.Foods.checked == flase) {
+				alert("No favorite food selected. Please choose a favorite food.");
+				flag ++;
+				return false;
+			}
+		}
+
+//this one should work... 
+
+		//function checkFunction() {
+		// 	var flag = 0;
+		// 	var x = document.forms["infoForm"]["firstName"].value;
+		// 	if (x == null || x == "") {
+		// 		alert("First name is blank. Fill out first name.");
+		// 		flag ++;
+		// 		return false;
+		// 	}
+		// 	var x = document.forms["infoForm"]["lastName"].value;
+		// 	if (x == null || x == "") {
+		// 		alert("Last name blank. Fill out last name.");
+		// 		flag ++;
+		// 		return false;
+		// 	}
+		// 	var x = document.forms["infoForm"]["news"].value;
+		// 	if (x == null || x == "") {
+		// 		alert("No news form selected. Please choose one or more forms of news.")
+		// 		flag ++;
+		// 		return false;
+		// 	}
+		// 	var x = document.forms["infoForm"]["food"].value;
+		// 	if (x == null || x ++ "") {
+		// 		alert("No favorite food choosen. Please choose one or more favorite food.")
+		// 		flag ++;
+		// 		return false;
+		// 	}
+		// 	if (flag == null || flag == '' || flag == 0) {
+		// 		alert("the form is incomplete. Please complete the form.")
+		// 	}
+		// 	else {
+		// 		document.getElementById("infoForm").submit();
+		// 		return false;
+		// 	}
+
+		// }
+
+//first attempt
+
+		// function checkFunction() {
+
+		// 	var x = 0;
+		// 	var f = 0;
+		// 	var l = 0;
+		// 	var n = 0;
+		// 	var d = 0;
+
+		// 	if (document.getElementById("firstName").value == '') {
+		// 		x ++;
+		// 		f ++;
+		// 		return false;
+		// 	}
+
+		// 	if (document.getElementById("lastName").value == '') {
+		// 		x ++;
+		// 		l ++;
+		// 		return false;
+		// 	}
+
+		// 	for (var i = 0; i< 5; i++){
+		// 		if(document.infoForm["news"][i].checked){
+		// 			n ++;
+		// 			x ++;
+		// 			return false;
+		// 		}
+		// 	}
+
+		// 	for (var i = 0; i< 3; i++){
+		// 		if(document.infoForm["foods"][i].checked){
+		// 			d ++;
+		// 			x ++;
+		// 			return false;
+		// 		}
+		// 	}
+
+		// 	alert(x f l n d);
+
+		// 	if (x = 0){
+		// 		document.getElementById("infoForm").submit();
+		// 		return false;
+		// 	}
+		// 	else {
+		// 		if (f > 0 ) {
+		// 			var f = "First name empty";
+		// 			return false;
+		// 		}
+		// 		if (l > 0) {
+		// 			var l = "Last name emply";
+		// 			return false;
+		// 		}
+		// 		if (n > 0) {
+		// 			var n = "Please choose a form of news";
+		// 			return false;
+		// 		}
+		// 		if (d > 0) {
+		// 			var d = "Please choose a favorite food";
+		// 			return false;
+		// 		}
+
+		// 		alert(f l n d);
+		// 		return false;
+		// 	}
+		// }
+
+	</script>
+
+</body>
+</html>
