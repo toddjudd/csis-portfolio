@@ -1,0 +1,63 @@
+h2, h3, h4 {
+	color: #607d8b;
+	margin: auto;
+}
+
+.profile-pic {
+	height:200px;
+	width:200px;
+	border-radius: 50%;
+}
+
+.text-orginizer {
+	width:90%;
+	margin:auto;
+	padding:12px;
+	background-color:white;
+}
+
+/* unvisited link */
+a:link.reference {
+    color: #324467;
+}
+
+/* visited link */
+a:visited.reference {
+    color: #324467;
+}
+
+/* mouse over link */
+a:hover.reference {
+    color: white;
+    background-color: #324467;
+}
+
+/* selected link */
+a:active.reference {
+    color: white;
+    background-color: #555555;
+}
+
+a.reference {
+	margin:8px;
+	text-decoration: none;
+}
+
+.reference-link {
+	text-decoration: underline;
+	color: white;
+	background-color: #999;
+}
+
+/* mouse over link */
+a:hover.reference-link {
+    color: white;
+    background-color: #324467;
+}
+
+/* selected link */
+a:active.referenced-link {
+    color: white;
+    background-color: #555555;
+}
+
