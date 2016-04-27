@@ -255,6 +255,19 @@ td {
 	text-align: center;
 }
 
+.version2 { 
+   position: relative; 
+   width: 100%; /* for IE 6 */
+}
+
+.version2txt { 
+   position: absolute; 
+   top: 35px; 
+   left: 35px; 
+   width: 100%; 
+   color:white;
+}
+
 /*Responsive web design below*/
 
 @media all and (max-width: 1550px) {
