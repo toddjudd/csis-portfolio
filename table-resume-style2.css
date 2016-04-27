@@ -1,0 +1,57 @@
+.content > h1, h2, h3 {
+	text-align:center;
+	color:#84ad3e;
+}
+
+/* unvisited link */
+a:link {
+    color: black;
+}
+
+/* visited link */
+a:visited {
+    color: 	#415058;
+}
+
+/* mouse over link */
+a:hover {
+    color: 	#415058;
+}
+
+/* selected link */
+a:active {
+    color: 	#415058;
+}
+
+nav {
+	background-color:#3e84ad;
+}
+
+body, .content{
+	background-color: #f2e5cd;
+}
+
+h3{ 
+	text-align: left;
+	color:#342268;
+}
+
+.motto {
+	width: 100%;
+}
+
+html {
+	font: sans-serif, 14pt, regular;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    border: 1px solid #342268;
+}
+
+th, td {
+    text-align: left;
+    padding: 8px;
+    border: 1px solid #342268;
+}

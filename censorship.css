@@ -1,3 +1,9 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+
+html{
+	font-family: Roboto;
+}
+
 h2, h3, h4 {
 	color: #607d8b;
 	margin: auto;
@@ -45,14 +51,13 @@ a.reference {
 
 .reference-link {
 	text-decoration: underline;
-	color: white;
-	background-color: #999;
+	color:black;
 }
 
 /* mouse over link */
 a:hover.reference-link {
     color: white;
-    background-color: #324467;
+    background-color: #607d8b;
 }
 
 /* selected link */
